@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <link rel="icon" type="image/x-icon" href="\Users\aquilla afintinni\Downloads/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+        <meta name="description" content="About Oluremi Abraham">
+        <meta name="author" content="Oluremi Abraham">
+        <meta http-equiv="refresh" content="300">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        
+    </head>
+    <body>
+      <div id="block1">
+            <hi>Oluremi Abraham</hi><br>
+            <a class="active" href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#register">Register</a>
+            <a href="#login">Login</a>
+        </div>
+      <div class="whole">
+      <div id="home">
+           <p> </p>
+           <h2>My Name</h2>
+              <p>Oluremi Abraham</p>
+              <h2>A Little About Me</h2>
+              <p>I am a generous student</p>
+              <h2>My Goals</h2>
+              <h2>My Education</h2>
+              <h2>My Job Experiances</h2>
+              <h2>My Hobbies & Skills</h2>
+              <p></p>
+      </div>
+          <div id="contact">
+            <h2>Contact Me</h2>
+            <form action="/action_page.php">
+                <label for="fname">Name:</label><br>
+                <input type="text" placeholder="Enter your full name" name="fname" required><br>
+                <label for="email">Email:</label><br>
+                <input type="text" placeholder="Enter your email" name="email" required><br>
+                <label for="iMessage">Message</label><br>
+                <input type="text" placeholder="Write a message to me" name="iMessage"><br>
+                <label for="mPriority">Priority</label><br>
+                <select name="mPriority"> 
+                  <option value=""></option>
+                  <option value="urgent">Urgent</option>
+                  <option value="nUrgent">Not Urgent</option>
+                </select><br>
+            </form>
+            <div class="container">
+              <p>Here's an unfunctional calculator ;)</p>
+            <table>
+                <tr>
+                    <td colspan="3"><input type="text" id="space" value: button></td>
+                    <td><button class="button1">del</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">7</button></td>
+                    <td><button class="button">8</button></td>
+                    <td><button class="button">9</button></td>
+                    <td><button class="button">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">4</button></td>
+                    <td><button class="button">5</button></td>
+                    <td><button class="button">6</button></td>
+                    <td><button class="button">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">1</button></td>
+                    <td><button class="button">2</button></td>
+                    <td><button class="button">3</button></td>
+                    <td><button class="button">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">0</button></td>
+                    <td><button class="button">%</button></td>
+                    <td><button class="button">/</button></td>
+                    <td><button class="button">=</button></td>
+                </tr>
+            </table>
+        </div>
+          </div>
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var block1 = document.getElementById("block1");
+            var sticky = block1.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                block1.classList.add("sticky")
+              } else {
+                block1.classList.remove("sticky");
+              }
+            }
+        </script>
+        <div id="register">
+          <h2>Register</h2>
+          <form action="/action_page.php">
+            <label for="f1name">First Name:</label><br>
+            <input type="text" name="f1name" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" required><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" name="phone" maxlength="11" required><br>
+            <label for="gender">Gender:</label><br>
+            <select name="gender"> 
+              <option value=""></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select><br>
+            <label for="country">Country:</label><br>
+            <input type="text" name="country" required><br>
+            <label for="state">State/Province:</label><br>
+            <input type="text" name="state" required><br>
+            <label for="uname">Username:</label><br>
+            <input type="text" name="uname" required><br>
+            <label for="passWord">Password:</label><br>
+            <input type="password" name="passWord" required><br>
+            <label for="cpassword">Confirm Password:</label><br>
+            <input type="password" name="cpassword" required><br>
+          </form>
+          
+        </div>
+        <div class="ofLogin">
+          <div id="login">
+          <h2 class="imgcontainer">Login</h2>
+          <div class="imgcontainer">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+          <form action="/action_page.php" class="lorac">
+            <label for="u11name">Username:</label><br>
+            <input type="text" name="u11name" placeholder="Enter Username" required><br>
+            <label for="pass1Word">Password:</label><br>
+            <input type="password" name="pass1Word" placeholder="Enter Password" required><br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remind me
+            </label><br>
+            <button type="submit" class="ingenium">Sign In</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </body>
+</html>

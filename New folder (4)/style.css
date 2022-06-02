@@ -1,0 +1,141 @@
+html {
+  font-family: 'Hi Melody', cursive;
+  
+}
+body {
+  margin: 0px;
+  
+}
+hi {
+  padding-left: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+#block1 {
+  background-color: gray;
+  overflow: hidden;
+}
+#block1 a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#block1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#block1 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.whole {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ddd;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .whole {
+  padding-top: 100px;
+}
+.buttons {
+  border: none;
+  color: white;
+  background-color: gray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+#home {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  background-color: white;
+}
+p {
+  font-size: 25px;
+}
+#contact{
+  padding-top: 100px;
+  padding-left: 30px;
+  background-color: white;
+}
+#contact select[name="mPriority"] {
+  width: 177px;
+  height: 21px;
+}
+#register{
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+#register select[name="gender"] {
+  width: 177px;
+  height: 21px;
+}
+.container {
+  position: static;
+  padding: 20px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: fit-content;
+  float: right;
+}
+.button {
+  height: 40px;
+  width: 40px;
+}
+.ofLogin {
+  background-color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#login {
+  display: block;
+  z-index: auto;
+  padding: 16px;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 5px;
+  max-width: 584px;
+  background-color: white;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.lorac input[name="u11name"], input[name="pass1Word"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.lorac button {
+  cursor: pointer;
+  background-color: #04AA6D;
+  height: 50px;
+  width: 100%;
+  border: 0px;
+}
+.lorac button:hover {
+  background-color: aqua;
+}
